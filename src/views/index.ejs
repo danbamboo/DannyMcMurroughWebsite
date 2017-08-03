@@ -7,17 +7,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Danny McMurrough">
 
-    <title>Agency - Start Bootstrap Theme</title>
+    <title>Danny M. Space</title>
 
     <!--bower:css-->
     <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css" />
     <!--endbower-->
     
+     <!-- bower:js -->
+    <script src="/jquery/dist/jquery.js"></script>
+    <script src="/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- endbower -->
+    
+    
     <!--inject:css-->
     <link rel="stylesheet" href="/css/agency.css">
-    <link rel="stylesheet" href="/css/agency.min.css">
+    <!--<link rel="stylesheet" href="/css/agency.min.css">-->
     <!--endinject-->
     
     <!--inject:js-->
@@ -34,13 +40,10 @@
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     
-    <!-- bower:js -->
-    <script src="/jquery/dist/jquery.js"></script>
-    <script src="/bootstrap/dist/js/bootstrap.js"></script>
-    <!-- endbower -->
+   
     
     <!-- Theme CSS -->
-    <link href="css/agency.min.css" rel="stylesheet">
+    <!--<link href="css/agency.min.css" rel="stylesheet">-->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -61,7 +64,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand page-scroll" href="#page-top">^Mountain Top</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -73,7 +76,7 @@
                     
                     <% for(var i=0; i<nav.length; i++) { %>
                     <li>
-                        <a class="page-scroll" href="#<%=nav[i] %>"> <%=nav[i] %> </a>
+                        <a class="page-scroll" href="#<%=nav[i].Link %>"> <%=nav[i].Text %> </a>
                     </li>
                         <% } %>
                     
@@ -103,26 +106,15 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Welcome To Our Studio!</div>
-                <div class="intro-heading">It's Nice To Meet You</div>
-                <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
+                <div class="intro-lead-in">Danny McMurrough's Page</div>
+                <div class="intro-heading">Enjoy The Ride</div>
+                
+                <a href="#services" class="page-scroll btn btn-xl">About Me</a>
             </div>
         </div>
     </header>
 
     <!-- Services Section -->
-    
-    
-        <!--EJS syntax example-->
-    <ul>
-        <% for(var i=0; i<list.length; i++) { %>
-        <li>
-            <h4> <%=list[i] %> </h4>
-        </li>
-        <%}%>
-    </ul>
-    
-    
     
     
     <section id="Services">

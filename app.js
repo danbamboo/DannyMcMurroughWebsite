@@ -12,14 +12,13 @@ app.set('views', './src/views');
 app.set('view engine', 'ejs');
 
 app.get('/', function(req, res){
-   //res.send(index.html);
+   //res.send(index.html); 
    res.render('index', { 
-       list: ['frist val', '2nd val', '3rd val'], 
        nav: [
-            {Link: 'Services', Text: 'Services'},
-            {Link: 'Portfolio', Text: 'Portfolio'},
+            {Link: 'Services', Text: 'Resume'},
+            {Link: 'Portfolio', Text: 'Projects'},
             {Link: 'About', Text: 'About'},
-            {Link: 'Team', Text: 'Team'},
+            {Link: 'Team', Text: 'Games'},
             {Link: 'Contact', Text: 'Contact'}]
    });
 });
